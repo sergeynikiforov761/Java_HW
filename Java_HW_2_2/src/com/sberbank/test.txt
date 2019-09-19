@@ -1,0 +1,16 @@
+Trade_1:{
+    type={FX_SPOT}
+    price={1111.}
+},
+Trade_2:{
+    type={BOND}
+    price={22.22}
+},
+Trade_3:{
+    type={COMMODITY_SPOT}
+    price={333.43}
+},
+Trade_4:{
+    type={IR_SWAP}
+    price={1234.567}
+}
