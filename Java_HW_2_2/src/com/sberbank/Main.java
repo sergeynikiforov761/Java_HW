@@ -6,14 +6,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    public static TradeType getType(String outerString){
-        for(TradeType type: TradeType.values()){
-            if(type.getString().equals(outerString)){
-                return type;
-            }
-        }
-        return TradeType.DEFAULT;
-    }
     public static String typeRefactor(String currentString){
         int firstIndex = currentString.indexOf('{');
         int finalIndex = currentString.indexOf('}');
@@ -28,6 +20,7 @@ public class Main {
         List<String> arrayPrices = new ArrayList<>();
         try {
             FileReader fr = new FileReader(new File(fileName));
+            // InputStreamReader fr = new InputStreamReader(System.in);
             BufferedReader reader = new BufferedReader(fr);
             String line = reader.readLine();
             // create regular expression and patterns for types and prices
@@ -49,7 +42,7 @@ public class Main {
                 line = reader.readLine();
             }
             for(int i = 0; i < arrayPrices.size(); i++){
-                TradeType currentType = getType(arrayTypes.get(i));
+                TradeType currentType = TradeType.valueOf(arrayTypes.get(i));
                 currentType.CreateTrade(Double.parseDouble(arrayPrices.get(i)));
             }
         }
