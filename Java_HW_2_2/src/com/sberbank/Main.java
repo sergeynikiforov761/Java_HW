@@ -18,6 +18,7 @@ public class Main {
         // create arrays for types and prices of input date
         List<String> arrayTypes = new ArrayList<>();
         List<String> arrayPrices = new ArrayList<>();
+        List<Trade> arrayTrades = new ArrayList<>();
         try {
             FileReader fr = new FileReader(new File(fileName));
             // InputStreamReader fr = new InputStreamReader(System.in);
@@ -43,7 +44,7 @@ public class Main {
             }
             for(int i = 0; i < arrayPrices.size(); i++){
                 TradeType currentType = TradeType.valueOf(arrayTypes.get(i));
-                currentType.CreateTrade(Double.parseDouble(arrayPrices.get(i)));
+                arrayTrades.add(currentType.CreateTrade(Double.parseDouble(arrayPrices.get(i))));
             }
         }
         catch(IOException ex){

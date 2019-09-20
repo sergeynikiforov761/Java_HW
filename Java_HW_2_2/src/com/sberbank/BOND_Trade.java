@@ -1,6 +1,6 @@
 package com.sberbank;
 
-public class BOND_Trade{
+public class BOND_Trade extends Trade{
     private Double price;
     private String type;
 
@@ -8,6 +8,8 @@ public class BOND_Trade{
         this.price = price;
         this.type = type;
     }
+
+    @Override
     public void printTrade(){
         System.out.println("Type: " + this.type + ", " + "Price:" + this.price);
     }

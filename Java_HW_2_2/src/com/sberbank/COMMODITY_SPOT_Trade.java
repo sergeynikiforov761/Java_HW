@@ -1,6 +1,6 @@
 package com.sberbank;
 
-public class COMMODITY_SPOT_Trade{
+public class COMMODITY_SPOT_Trade extends Trade{
     private Double price;
     private String type;
 
@@ -8,6 +8,8 @@ public class COMMODITY_SPOT_Trade{
         this.price = price;
         this.type = type;
     }
+
+    @Override
     public void printTrade(){
         System.out.println("Type: " + this.type + ", " + "Price:" + this.price);
     }
