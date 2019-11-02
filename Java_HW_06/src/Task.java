@@ -1,32 +1,36 @@
+import com.sberbank.Semaphore;
+
 import java.util.concurrent.Callable;
 
 public class Task<T> {
 
     private final Callable<? extends T> callable;
-    private T result = null;
-    private Exception error = null;
+    private volatile boolean finished = false;
+    private T result;
+    private RuntimeException exception;
+    private com.sberbank.Semaphore semaphore = new Semaphore(1);
 
     public Task(Callable<? extends T> callable) {
         this.callable = callable;
     }
 
-    public T get() throws Exception {
-        synchronized (this) {
-            if (result == null) {
+    public T get() {
+        if (!finished) {
+            semaphore.lock();
+            if (!finished) {
                 try {
                     result = callable.call();
-                    return result;
-                } catch (Exception error) {
-                    this.error = error;
-                    throw error;
-                }
-            } else {
-                if (error != null) {
-                    throw error;
-                } else {
-                    return result;
+                } catch (Exception e) {
+                    exception = new RuntimeException(e);
+                    throw exception;
+                } finally {
+                    finished = true;
                 }
             }
+            semaphore.unlock();
         }
+
+        if (exception != null) throw exception;
+        return result;
     }
 }
