@@ -7,21 +7,18 @@ public class PrimitiveTypeProcessHandler implements ProcessHandler {
     private Field field;
     private Object object;
     private Integer tabulationLevel;
+    private StringBuilder result;
+    private Helper helper;
 
     public PrimitiveTypeProcessHandler(Field field, Object object, Integer tabulationLevel) {
         this.field = field;
         this.object = object;
         this.tabulationLevel = tabulationLevel;
-    }
+        this.result = new StringBuilder();    }
 
     @Override
-    public String generateString() throws IllegalAccessException {
-        field.setAccessible(true);
-        String result = "";
-        for (int i = 0; i < tabulationLevel; i++) {
-            result += "\t";
-        }
-        result += "\"" + field.getName() + "\"" + ": " + "\"" + field.get(object) + "\"";
-        return result;
+    public String generateString() {
+        helper = new JsonStringGeneratorHelper();
+        return helper.primitiveTypeProcessHandler(result, field, object, tabulationLevel);
     }
 }

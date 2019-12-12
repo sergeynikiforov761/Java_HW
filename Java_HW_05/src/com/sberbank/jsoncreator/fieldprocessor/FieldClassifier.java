@@ -1,7 +1,6 @@
 package com.sberbank.jsoncreator.fieldprocessor;
 
 import com.sberbank.jsoncreator.processhandlers.*;
-import com.sberbank.jsoncreator.processhandlers.simplearrayprocessorhandlers.*;
 
 import java.lang.reflect.Field;
 import java.util.Collection;
@@ -27,24 +26,16 @@ public class FieldClassifier {
             return new CollectionProcessHandler(field, object, tabulationLevel);
         } else if (field.get(object) instanceof Map) {
             return new MapProcessHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof Object[]) {
+        } else if ((field.get(object).getClass().equals(Object[].class)) ||
+                (field.get(object).getClass().equals(int[].class)) ||
+                (field.get(object).getClass().equals(char[].class)) ||
+                (field.get(object).getClass().equals(byte[].class)) ||
+                (field.get(object).getClass().equals(short[].class)) ||
+                (field.get(object).getClass().equals(boolean[].class)) ||
+                (field.get(object).getClass().equals(double[].class)) ||
+                (field.get(object).getClass().equals(float[].class)) ||
+                (field.get(object).getClass().equals(long[].class))) {
             return new ArrayProcessHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof int[]) {
-            return new IntArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof char[]) {
-            return new CharArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof byte[]) {
-            return new ByteArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof short[]) {
-            return new ShortArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof boolean[]) {
-            return new BooleanArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof double[]) {
-            return new DoubleArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof float[]) {
-            return new FloatArrayProcessorHandler(field, object, tabulationLevel);
-        } else if (field.get(object) instanceof long[]) {
-            return new LongArrayProcessorHandler(field, object, tabulationLevel);
         } else {
             return null;
         }

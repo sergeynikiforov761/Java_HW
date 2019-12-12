@@ -2,6 +2,8 @@ package com.sberbank.jsoncreator;
 
 import com.sberbank.jsoncreator.fieldprocessor.FieldClassifier;
 import com.sberbank.jsoncreator.processhandlers.Decorator;
+import com.sberbank.jsoncreator.processhandlers.Helper;
+import com.sberbank.jsoncreator.processhandlers.JsonStringGeneratorHelper;
 import com.sberbank.jsoncreator.processhandlers.ProcessHandler;
 
 import java.lang.reflect.Field;
@@ -9,9 +11,12 @@ import java.lang.reflect.Field;
 public class JsonCreator {
 
     private Object object;
+    private StringBuilder result;
+    private Helper helper;
 
     public JsonCreator(Object object) {
         this.object = object;
+        this.result = new StringBuilder();
     }
 
     public String create() throws IllegalAccessException {
@@ -20,36 +25,20 @@ public class JsonCreator {
     }
 
     public String createJsonString(Object object, Integer tabulationLevel) throws IllegalAccessException {
-        String jsonString = "{";
-        jsonString += "\n";
+        helper = new JsonStringGeneratorHelper();
+        helper.processHandlerBeforeFirstIterMain(result);
         Field[] fields = object.getClass().getDeclaredFields();
-        int counter = 0;
         for (Field field : fields) {
-            counter++;
             ProcessHandler fieldClassifier = new FieldClassifier(field, object, tabulationLevel).classify();
             if (fieldClassifier != null) {
-                jsonString += new Decorator(fieldClassifier).generateString();
-                if (counter != fields.length) {
-                    jsonString += ",";
-                }
-                jsonString += "\n";
+                result.append(new Decorator(fieldClassifier).generateString());
             } else {
-                for (int i = 0; i < tabulationLevel; i++) {
-                    jsonString += "\t";
-                }
-                jsonString += "\"" + field.getName() + "\"" + ": ";
-                jsonString += createJsonString(field.get(object), tabulationLevel + 1);
-                if (counter != fields.length) {
-                    jsonString += ",";
-                }
-                jsonString += "\n";
+                helper.processHandlerBefore(result, field, tabulationLevel, true, true);
+                createJsonString(field.get(object), tabulationLevel + 1);
             }
+            helper.processHandlerWhileCyclingIterMain(result);
         }
-        tabulationLevel--;
-        for (int i = 0; i < tabulationLevel; i++) {
-            jsonString += "\t";
-        }
-        jsonString += "}";
-        return jsonString;
+        helper.processHandlerAfter(result, tabulationLevel, true, true);
+        return result.toString();
     }
 }

@@ -13,7 +13,7 @@ public class SimpleClasses {
     }
 
     public List<Class<?>> getSimpleClasses() {
-        List<Class<?>> simpleClassesList = new ArrayList<>(Arrays.asList(simpleClasses));
-        return simpleClassesList;
+        return new ArrayList<>(Arrays.asList(simpleClasses));
+
     }
 }

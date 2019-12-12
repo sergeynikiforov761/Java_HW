@@ -7,42 +7,25 @@ public class MapProcessHandler implements ProcessHandler {
     private Field field;
     private Object object;
     private Integer tabulationLevel;
+    private StringBuilder result;
+    private Helper helper;
 
     public MapProcessHandler(Field field, Object object, Integer tabulationLevel) {
         this.field = field;
         this.object = object;
         this.tabulationLevel = tabulationLevel;
+        this.result = new StringBuilder();
     }
 
     @Override
     public String generateString() throws IllegalAccessException {
-        String result = "";
-        int counter = 0;
-        field.setAccessible(true);
+        helper = new JsonStringGeneratorHelper();
+        tabulationLevel = helper.processHandlerBefore(result, field, tabulationLevel, true, false);
         Map<?, ?> map = (Map<?, ?>) field.get(object);
-        for (int j = 0; j < tabulationLevel; j++) {
-            result += "\t";
-        }
-        result += "\"" + field.getName() + "\"" + ": ";
-        result += "{";
-        tabulationLevel++;
         for (Map.Entry<?, ?> entry : map.entrySet()) {
-            counter++;
-            result += "\n";
-            for (int j = 0; j < tabulationLevel; j++) {
-                result += "\t";
-            }
-            result += "\"" + entry.getKey() + "\"" + ": " + "\"" + entry.getValue() + "\"";
-            if (counter != map.size()) {
-                result += ",";
-            }
+            helper.processCycleHandler(result, entry, tabulationLevel, true);
         }
-        result += "\n";
-        tabulationLevel--;
-        for (int j = 0; j < tabulationLevel; j++) {
-            result += "\t";
-        }
-        result += "}    ";
-        return result;
+        tabulationLevel = helper.processHandlerAfter(result, tabulationLevel, true, false);
+        return result.toString();
     }
 }

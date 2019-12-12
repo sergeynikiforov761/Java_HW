@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) throws IllegalAccessException {
 	// write your code here
         Address address = new Address("Moscow", "428019");
-        int[] grades = {1, 2, 3, 4, 5, 6};
+        char[] grades = {'1', '2', '3', '4', '5', '6'};
         Collection<Integer> collection = new ArrayList<>();
         collection.add(1);
         collection.add(2);
