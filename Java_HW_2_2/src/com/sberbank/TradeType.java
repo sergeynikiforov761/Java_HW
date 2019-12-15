@@ -7,9 +7,9 @@ public enum TradeType {
         }
 
         public Trade CreateTrade(double price) {
-            FX_SPOT_Trade fx_spot_trade = new FX_SPOT_Trade(getString(), price);
-            fx_spot_trade.printTrade();
-            return fx_spot_trade;
+            FxSpotTrade fxSpotTrade = new FxSpotTrade(getString(), price);
+            fxSpotTrade.printTrade();
+            return fxSpotTrade;
         }
     },
     BOND {
@@ -18,9 +18,9 @@ public enum TradeType {
         }
 
         public Trade CreateTrade(double price) {
-            BOND_Trade bond_trade = new BOND_Trade(getString(), price);
-            bond_trade.printTrade();
-            return bond_trade;
+            BondTrade bondTrade = new BondTrade(getString(), price);
+            bondTrade.printTrade();
+            return bondTrade;
         }
     },
     COMMODITY_SPOT {
@@ -29,9 +29,9 @@ public enum TradeType {
         }
 
         public Trade CreateTrade(double price) {
-            COMMODITY_SPOT_Trade commodity_spot_trade = new COMMODITY_SPOT_Trade(getString(), price);
-            commodity_spot_trade.printTrade();
-            return commodity_spot_trade;
+            CommoditySpotTrade commoditySpotTrade = new CommoditySpotTrade(getString(), price);
+            commoditySpotTrade.printTrade();
+            return commoditySpotTrade;
         }
     },
     IR_SWAP {
@@ -40,9 +40,9 @@ public enum TradeType {
         }
 
         public Trade CreateTrade(double price) {
-            IR_SWAP_Trade ir_swap_trade = new IR_SWAP_Trade(getString(), price);
-            ir_swap_trade.printTrade();
-            return ir_swap_trade;
+            IrSwapTrade irSwapTrade = new IrSwapTrade(getString(), price);
+            irSwapTrade.printTrade();
+            return irSwapTrade;
         }
     },
     DEFAULT {
