@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d4184f8-defb-42cb-b5bb-94bab8501124" name="Default Changelist" comment="" />
+    <list default="true" id="1d4184f8-defb-42cb-b5bb-94bab8501124" name="Default Changelist" comment="fixed">
+      <change afterPath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/jsoncreator/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/jsoncreator/XmlCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/jsoncreator/processhandlers/XMLStringGeneratorHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_05/out/production/HW05/com/sberbank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_05/out/production/HW05/com/sberbank/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_05/out/production/HW05/com/sberbank/jsoncreator/JsonCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_05/out/production/HW05/com/sberbank/jsoncreator/JsonCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/jsoncreator/JsonCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_05/src/com/sberbank/jsoncreator/JsonCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/BOND_Trade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/COMMODITY_SPOT_Trade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/FX_SPOT_Trade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/IR_SWAP_Trade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/Trade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/TradeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/TradeType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_HW_2/com/sberbank/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/BOND_Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/BondTrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/COMMODITY_SPOT_Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/CommoditySpotTrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/FX_SPOT_Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/FxSpotTrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/IR_SWAP_Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/IrSwapTrade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/MyHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/MyHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/out/test/Java_HW_3/HashMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/out/test/Java_HW_3/HashMapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/src/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/src/MyHashMap.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,16 +41,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sberbank/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="57" column="109" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="109" />
+            <state relative-caret-position="527">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,52 +67,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/IR_SWAP_Trade.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/IrSwapTrade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/FxSpotTrade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/BondTrade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/CommoditySpotTrade.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/FX_SPOT_Trade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <element signature="e#264#265#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/BOND_Trade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-              <folding>
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/COMMODITY_SPOT_Trade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,68 +116,72 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/sberbank/Types.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/Trade.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/test.txt" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/Main.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/TradeType.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/TradeImpl.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/BOND_Trade.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/COMMODITY_SPOT_Trade.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/FX_SPOT_Trade.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/IR_SWAP_Trade.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/BondTrade.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/FxSpotTrade.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/IrSwapTrade.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="6" />
     <option name="y" value="12" />
     <option name="width" value="1260" />
     <option name="height" value="642" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Java_HW_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_HW_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Java_HW_2_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_HW_2_1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Java_HW_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_HW_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Java_HW_2_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_HW_2_1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Java_HW_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_HW_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Java_HW_2_1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java_HW_2_1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sberbank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_HW_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/sberbank" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -185,53 +206,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="Java_HW_2_1" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="Java_HW_2_1" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -252,30 +226,24 @@
       <option name="presentableId" value="Default" />
       <updated>1568838175053</updated>
       <workItem from="1568838178011" duration="12782000" />
+      <workItem from="1576435988159" duration="263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12782000" />
+    <option name="totallyTimeSpent" value="13045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16194332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="SQL" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3285968" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3285968" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3285968" />
@@ -283,21 +251,36 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="SQL" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/Trade.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/TradeType.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/TradeImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -305,88 +288,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/Trade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/TradeType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#99#100#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/TradeImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/BondTrade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/BOND_Trade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding>
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/COMMODITY_SPOT_Trade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/FX_SPOT_Trade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/IR_SWAP_Trade.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/CommoditySpotTrade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
-            <element signature="e#264#265#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="57" column="109" selection-start-line="57" selection-start-column="89" selection-end-line="57" selection-end-column="109" />
+        <state relative-caret-position="527">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/IrSwapTrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/FxSpotTrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
