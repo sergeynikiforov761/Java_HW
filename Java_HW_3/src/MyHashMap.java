@@ -51,7 +51,7 @@ public class MyHashMap<K, V> {
             if (i == size){
                 i = 0;
             }
-            if (keys[i] == null){ // FIXME (NEED TO FILL WITH VALUES) AND RESIZE
+            if (keys[i] == null){
                 keys[i] = key;
             }
             if (keys[i] == key) {
@@ -71,7 +71,7 @@ public class MyHashMap<K, V> {
             if (deleted[i]){
                 return false;
             }
-            if(this.keys[i] == null){ //FIXME
+            if(this.keys[i] == null){
                 return false;
             }
             if(this.keys[i].equals(key)){
@@ -81,7 +81,7 @@ public class MyHashMap<K, V> {
     }
 
     private void setDeleted(int index){
-        deleted[index] = true; // FIXME Add check for out of range ??
+        deleted[index] = true;
         keys[index] = null;
         values[index] = null;
     }
@@ -94,7 +94,7 @@ public class MyHashMap<K, V> {
             if (deleted[i]){
                 return null;
             }
-            if (keys[i] == null) { //FIXME AND CHECK FOR DELETED CELLS
+            if (keys[i] == null) {
                 return null;
             }
             if (keys[i].equals(key)){
@@ -105,7 +105,7 @@ public class MyHashMap<K, V> {
 
     public V remove(K key){
         if(currentSize == 0){
-            return null;         // FIXME ADD LOGIC
+            return null;
         }
         for(int i = index(hash(key)) ; ; i++){
             if (i == size) {
@@ -114,7 +114,7 @@ public class MyHashMap<K, V> {
             if (deleted[i]){
                 return null;
             }
-            if (keys[i] == null) { //FIXME AND CHECK FOR DELETED CELLS
+            if (keys[i] == null) {
                 return null;
             }
             if (keys[i].equals(key)){
@@ -128,11 +128,11 @@ public class MyHashMap<K, V> {
     }
 
     private int hash(K key) {
-        return key.hashCode(); // FIXME
+        return key.hashCode();
     }
 
     /* возвращает отсуп для данного значения хэш-функции */
-    private int index(int hash) {  // FIXME
+    private int index(int hash) {
         return Math.abs(hash) % size;
     }
 }
