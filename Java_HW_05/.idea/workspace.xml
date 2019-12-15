@@ -2,43 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4a3353-7080-4c7e-a34a-fd551d95fc65" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/Creator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/XmlCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/XMLStringGeneratorHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW05/META-INF/HW05.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/example/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/example/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/fieldprocessor/SimpleClasses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/fieldprocessor/SimpleClasses.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/BooleanArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/ByteArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/CharArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/DoubleArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/FloatArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/IntArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/LongArrayProcessorHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/ShortArrayProcessorHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/JsonCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW05/com/sberbank/jsoncreator/JsonCreator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/example/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/example/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/SimpleClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/SimpleClasses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/BooleanArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/ByteArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/CharArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/DoubleArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/FloatArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/IntArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/LongArrayProcessorHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/ShortArrayProcessorHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_2_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_2_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_2_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_2_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/MyHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/out/production/Java_HW_3/MyHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/out/test/Java_HW_3/HashMapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/out/test/Java_HW_3/HashMapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java_HW_3/src/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java_HW_3/src/MyHashMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,10 +40,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="215">
+              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,43 +52,45 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/XmlCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+            <state relative-caret-position="313">
+              <caret line="40" column="129" lean-forward="true" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/XMLStringGeneratorHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="57" column="112" selection-start-line="57" selection-start-column="112" selection-end-line="57" selection-end-column="112" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1781#1782#0" expanded="true" />
+                <element signature="e#1845#1846#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="16" column="50" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
-              <caret line="22" column="98" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
+              <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,20 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+            <state relative-caret-position="98">
+              <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,29 +114,40 @@
         <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ProcessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Decorator.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="221">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="177">
+              <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="106" selection-start-line="5" selection-start-column="106" selection-end-line="5" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -169,8 +157,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -180,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/sberbank/JsonCreater.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreater/JsonCreater.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreater/Person.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreater/Adress.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreater/JsonCreator.java" />
@@ -219,17 +205,20 @@
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/BooleanArrayProcessorHandler.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/ShortArrayProcessorHandler.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/example/Person.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/Main.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/CharArrayProcessorHandler.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/SimpleClasses.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/Creator.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/XmlCreator.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/XMLStringGeneratorHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java" />
         <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java" />
-        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java" />
       </list>
     </option>
   </component>
@@ -307,8 +296,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java_HW_2_2" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -360,12 +349,20 @@
       <updated>1572534020692</updated>
       <workItem from="1572534024551" duration="32837000" />
       <workItem from="1575808845116" duration="15133000" />
-      <workItem from="1576155477730" duration="11493000" />
+      <workItem from="1576155477730" duration="23885000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed_v_1">
+      <created>1576167976830</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576167976830</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59463000" />
+    <option name="totallyTimeSpent" value="71855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -408,6 +405,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed_v_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed_v_1" />
+  </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="Application">
@@ -431,13 +432,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/FloatArrayProcessorHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/IntArrayProcessorHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/simplearrayprocessorhandlers/LongArrayProcessorHandler.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1209">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/StringBuffer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-77">
@@ -480,30 +474,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="26" column="39" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/SimpleClasses.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -521,44 +495,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/fieldprocessor/FieldClassifier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="22" column="98" selection-start-line="22" selection-start-column="98" selection-end-line="22" selection-end-column="98" />
+        <state relative-caret-position="153">
+          <caret line="39" column="75" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+        <state relative-caret-position="117">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/Creator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/XMLStringGeneratorHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="57" column="112" selection-start-line="57" selection-start-column="112" selection-end-line="57" selection-end-column="112" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1845#1846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/XmlCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="40" column="129" lean-forward="true" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ProcessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/JsonCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="38" column="60" selection-start-line="38" selection-start-column="60" selection-end-line="38" selection-end-column="60" />
+        <state relative-caret-position="215">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -568,24 +571,51 @@
     <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/Helper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="66" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="66" />
+          <caret line="5" column="106" selection-start-line="5" selection-start-column="106" selection-end-line="5" selection-end-column="106" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="22" column="97" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="97" />
+        <state relative-caret-position="221">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/JsonStringGeneratorHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/MapProcessHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="177">
+          <caret line="22" column="90" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/PrimitiveTypeProcessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/CollectionProcessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="23" column="91" selection-start-line="23" selection-start-column="91" selection-end-line="23" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sberbank/jsoncreator/processhandlers/ArrayProcessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

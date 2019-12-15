@@ -10,17 +10,17 @@ public class ArrayProcessHandler implements ProcessHandler {
     private StringBuilder result;
     private Helper helper;
 
-    public ArrayProcessHandler(Field field, Object object, Integer tabulationLevel) {
+    public ArrayProcessHandler(Field field, Object object, Integer tabulationLevel, Helper helper) {
         this.field = field;
         this.object = object;
         this.tabulationLevel = tabulationLevel;
         this.result = new StringBuilder();
+        this.helper = helper;
     }
 
     @Override
     public String generateString() throws IllegalAccessException {
-        helper = new JsonStringGeneratorHelper();
-        tabulationLevel = helper.processHandlerBefore(result, field, tabulationLevel, false, false);
+        tabulationLevel = helper.processHandlerBefore(result, field, tabulationLevel, false);
         Object array = field.get(object);
         int i = 0;
         while (true) {
@@ -31,7 +31,7 @@ public class ArrayProcessHandler implements ProcessHandler {
                 break;
             }
         }
-        tabulationLevel = helper.processHandlerAfter(result, tabulationLevel, false, false);
+        tabulationLevel = helper.processHandlerAfter(result, field, tabulationLevel, false);
         return result.toString();
     }
 }

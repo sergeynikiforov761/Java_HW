@@ -11,22 +11,22 @@ public class CollectionProcessHandler implements ProcessHandler {
     private Helper helper;
     private StringBuilder result;
 
-    public CollectionProcessHandler(Field field, Object object, Integer tabulationLevel) {
+    public CollectionProcessHandler(Field field, Object object, Integer tabulationLevel, Helper helper) {
         this.field = field;
         this.object = object;
         this.tabulationLevel = tabulationLevel;
         this.result = new StringBuilder();
+        this.helper = helper;
     }
 
     @Override
     public String generateString() throws IllegalAccessException {
-        helper = new JsonStringGeneratorHelper();
-        tabulationLevel = helper.processHandlerBefore(result, field, tabulationLevel, false, false);
+        tabulationLevel = helper.processHandlerBefore(result, field, tabulationLevel, false);
         Collection<?> collection = (Collection<?>) field.get(object);
         for (Object obj : collection) {
             helper.processCycleHandler(result, obj, tabulationLevel, false);
         }
-        tabulationLevel = helper.processHandlerAfter(result, tabulationLevel,false, false);
+        tabulationLevel = helper.processHandlerAfter(result, field, tabulationLevel,false);
         return result.toString();
     }
 }

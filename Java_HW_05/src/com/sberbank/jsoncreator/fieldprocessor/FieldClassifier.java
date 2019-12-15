@@ -11,21 +11,23 @@ public class FieldClassifier {
     private Field field;
     private Object object;
     private Integer tabulationLevel;
+    private Helper helper;
 
-    public FieldClassifier(Field field, Object object, Integer tabulationLevel) {
+    public FieldClassifier(Field field, Object object, Integer tabulationLevel, Helper helper) {
         this.field = field;
         this.object = object;
         this.tabulationLevel = tabulationLevel;
+        this.helper = helper;
     }
 
     public ProcessHandler classify() throws IllegalAccessException {
         field.setAccessible(true);
         if (new SimpleClasses().getSimpleClasses().contains(field.getType())) {
-            return new PrimitiveTypeProcessHandler(field, object, tabulationLevel);
+            return new PrimitiveTypeProcessHandler(field, object, tabulationLevel, helper);
         } else if (field.get(object) instanceof Collection) {
-            return new CollectionProcessHandler(field, object, tabulationLevel);
+            return new CollectionProcessHandler(field, object, tabulationLevel, helper);
         } else if (field.get(object) instanceof Map) {
-            return new MapProcessHandler(field, object, tabulationLevel);
+            return new MapProcessHandler(field, object, tabulationLevel, helper);
         } else if ((field.get(object).getClass().equals(Object[].class)) ||
                 (field.get(object).getClass().equals(int[].class)) ||
                 (field.get(object).getClass().equals(char[].class)) ||
@@ -35,7 +37,7 @@ public class FieldClassifier {
                 (field.get(object).getClass().equals(double[].class)) ||
                 (field.get(object).getClass().equals(float[].class)) ||
                 (field.get(object).getClass().equals(long[].class))) {
-            return new ArrayProcessHandler(field, object, tabulationLevel);
+            return new ArrayProcessHandler(field, object, tabulationLevel, helper);
         } else {
             return null;
         }

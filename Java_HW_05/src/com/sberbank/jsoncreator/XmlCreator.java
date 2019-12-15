@@ -2,51 +2,46 @@ package com.sberbank.jsoncreator;
 
 import com.sberbank.jsoncreator.fieldprocessor.FieldClassifier;
 import com.sberbank.jsoncreator.processhandlers.Helper;
-import com.sberbank.jsoncreator.processhandlers.JsonStringGeneratorHelper;
 import com.sberbank.jsoncreator.processhandlers.ProcessHandler;
+import com.sberbank.jsoncreator.processhandlers.XMLStringGeneratorHelper;
 
 import java.lang.reflect.Field;
 
-public class JsonCreator implements Creator {
-
+public class XmlCreator implements Creator {
     private Object object;
     private StringBuilder result;
     private Helper helper;
 
-    public JsonCreator(Object object) {
+    public XmlCreator(Object object) {
         this.object = object;
         this.result = new StringBuilder();
     }
 
     @Override
     public String create() throws IllegalAccessException {
-        Integer tabulationLevel = 1;
+        Integer tabulationLevel = 0;
         return createString(object, tabulationLevel);
     }
 
     @Override
     public String createString(Object object, Integer tabulationLevel) throws IllegalAccessException {
-        helper = new JsonStringGeneratorHelper();
-        result.append("{\n");
+        helper = new XMLStringGeneratorHelper();
+        result.append("\t".repeat(Math.max(0, tabulationLevel))).append("<").append(object.getClass().getSimpleName()).append(">\n");
         Field[] fields = object.getClass().getDeclaredFields();
         for (Field field : fields) {
             ProcessHandler fieldClassifier = new FieldClassifier(field, object, tabulationLevel, helper).classify();
             if (fieldClassifier != null) {
                 result.append(fieldClassifier.generateString());
+                result.append("\n");
             } else {
-                field.setAccessible(true);
-                result.append("\t".repeat(Math.max(0, tabulationLevel)));
-                result.append("\"").append(field.getName()).append("\"").append(": ");
-                result.append("{");
-                tabulationLevel++;
                 createString(field.get(object), tabulationLevel + 1);
             }
-            result.append(",\n");
         }
-        result.delete(result.length() - 2, result.length() - 1);
-        tabulationLevel--;
-        result.append("\t".repeat(Math.max(0, tabulationLevel)));
-        result.append("}");
+        result.append("\t".repeat(Math.max(0, tabulationLevel)))
+                .append("</")
+                .append(object.getClass()
+                        .getSimpleName())
+                .append(">");
         return result.toString();
     }
 }

@@ -8,38 +8,24 @@ public class JsonStringGeneratorHelper implements Helper {
     }
 
     @Override
-    public void processHandlerBeforeFirstIterMain(StringBuilder result){
-        result.append("{");
-        result.append("\n");
-    }
-
-    @Override
-    public void processHandlerWhileCyclingIterMain(StringBuilder result){
-        result.append(",");
-        result.append("\n");
-    }
-
-    @Override
-    public Integer processHandlerBefore(StringBuilder result, Field field, Integer tabulationLevel, Boolean isCurlyBraces, Boolean isMain) {
+    public Integer processHandlerBefore(StringBuilder result, Field field, Integer tabulationLevel, Boolean isMap) {
         field.setAccessible(true);
         result.append("\t".repeat(Math.max(0, tabulationLevel)));
         result.append("\"").append(field.getName()).append("\"").append(": ");
-        if(!isMain){
-            if (!isCurlyBraces) {
-                result.append("[");
-            } else {
-                result.append("{");
-            }
-            tabulationLevel++;
+        if (!isMap) {
+            result.append("[");
+        } else {
+            result.append("{");
         }
+        tabulationLevel++;
         return tabulationLevel;
     }
 
     @Override
-    public void processCycleHandler(StringBuilder result, Object obj, Integer tabulationLevel, Boolean isCurlyBraces) {
+    public void processCycleHandler(StringBuilder result, Object obj, Integer tabulationLevel, Boolean isMap) {
         result.append("\n");
         result.append("\t".repeat(Math.max(0, tabulationLevel)));
-        if (!isCurlyBraces) {
+        if (!isMap) {
             result.append("\"").append(obj).append("\"");
         } else {
             result.append("\"").append(((Map.Entry<?, ?>) obj).getKey()).append("\"").append(": ").append("\"")
@@ -49,16 +35,12 @@ public class JsonStringGeneratorHelper implements Helper {
     }
 
     @Override
-    public Integer processHandlerAfter(StringBuilder result, Integer tabulationLevel, Boolean isCurlyBraces, Boolean isMain) {
-        if(!isMain){
-            result.delete(result.length() - 1, result.length());
-            result.append("\n");
-        } else {
-            result.delete(result.length() - 2, result.length() - 1);
-        }
+    public Integer processHandlerAfter(StringBuilder result, Field field, Integer tabulationLevel, Boolean isMap) {
+        result.delete(result.length() - 1, result.length());
         tabulationLevel--;
+        result.append("\n");
         result.append("\t".repeat(Math.max(0, tabulationLevel)));
-        if (!isCurlyBraces) {
+        if (!isMap) {
             result.append("]");
         } else {
             result.append("}");

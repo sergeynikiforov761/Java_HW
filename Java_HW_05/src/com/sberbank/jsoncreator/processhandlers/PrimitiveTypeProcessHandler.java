@@ -10,15 +10,16 @@ public class PrimitiveTypeProcessHandler implements ProcessHandler {
     private StringBuilder result;
     private Helper helper;
 
-    public PrimitiveTypeProcessHandler(Field field, Object object, Integer tabulationLevel) {
+    public PrimitiveTypeProcessHandler(Field field, Object object, Integer tabulationLevel, Helper helper) {
         this.field = field;
         this.object = object;
         this.tabulationLevel = tabulationLevel;
-        this.result = new StringBuilder();    }
+        this.result = new StringBuilder();
+        this.helper = helper;
+    }
 
     @Override
     public String generateString() {
-        helper = new JsonStringGeneratorHelper();
         return helper.primitiveTypeProcessHandler(result, field, object, tabulationLevel);
     }
 }

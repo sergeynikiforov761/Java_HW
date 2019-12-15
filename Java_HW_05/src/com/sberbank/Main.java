@@ -1,5 +1,6 @@
 package com.sberbank;
 
+import com.sberbank.jsoncreator.XmlCreator;
 import com.sberbank.jsoncreator.example.Address;
 import com.sberbank.jsoncreator.JsonCreator;
 import com.sberbank.jsoncreator.example.Person;
@@ -25,6 +26,7 @@ public class Main {
         map.put("kitty", 3);
         map.put("puppy", 4);
         Person person = new Person("Ilya", 18, address, grades, collection, map);//, address);
+        System.out.println(new XmlCreator(person).create());
         System.out.println(new JsonCreator(person).create());
     }
 }
