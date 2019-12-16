@@ -11,7 +11,7 @@ public class Semaphore {
     }
 
     public void lock() {
-        synchronized (this){
+        synchronized (this) {
             while (currentThreadCount >= maxTreadCount) {
                 try {
                     this.wait();
@@ -19,13 +19,13 @@ public class Semaphore {
                     e.printStackTrace();
                 }
             }
-            ++currentThreadCount;
+            currentThreadCount++;
         }
     }
 
     public void unlock() {
         synchronized (this) {
-            --currentThreadCount;
+            currentThreadCount--;
             this.notify();
         }
     }
