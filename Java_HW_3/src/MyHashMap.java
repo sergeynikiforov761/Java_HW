@@ -8,19 +8,19 @@ public class MyHashMap<K, V> {
     private boolean[] deleted;
     private int currentSize = 0;
 
-    MyHashMap(int size){
-        if(size < 0){
+    MyHashMap(int size) {
+        if (size < 0) {
             throw new IllegalArgumentException("initial size must be greater than 0: " + size);
         }
         this.size = size;
         values = (V[]) new Object[this.size];
         keys = (K[]) new Object[this.size];
-        deleted =  new boolean[this.size];
+        deleted = new boolean[this.size];
         Arrays.fill(values, null);
         Arrays.fill(keys, null);
     }
 
-    int size(){
+    int size() {
         return size;
     }
 
@@ -30,7 +30,7 @@ public class MyHashMap<K, V> {
         K[] new_keys = (K[]) new Object[new_size];
         boolean[] new_deleted = new boolean[new_size];
 
-        for (K key: keys) {
+        for (K key : keys) {
             int current_index = index(hash(key));
             new_keys[current_index] = key;
             new_values[current_index] = get(key);
@@ -44,14 +44,14 @@ public class MyHashMap<K, V> {
     }
 
     void put(K key, V value) {
-        if(currentSize == size){
+        if (currentSize == size) {
             resize();
         }
-        for(int i = index(hash(key)) ; ; i++) {
-            if (i == size){
+        for (int i = index(hash(key)); ; i++) {
+            if (i == size) {
                 i = 0;
             }
-            if (keys[i] == null){
+            if (keys[i] == null) {
                 keys[i] = key;
             }
             if (keys[i] == key) {
@@ -63,61 +63,61 @@ public class MyHashMap<K, V> {
         }
     }
 
-    public boolean containsKey(K key){
-        for(int i = index(hash(key));;i++){
-            if (i == this.size){
+    public boolean containsKey(K key) {
+        for (int i = index(hash(key)); ; i++) {
+            if (i == this.size) {
                 i = 0;
             }
-            if (deleted[i]){
+            if (deleted[i]) {
+                continue;
+            }
+            if (this.keys[i] == null) {
                 return false;
             }
-            if(this.keys[i] == null){
-                return false;
-            }
-            if(this.keys[i].equals(key)){
+            if (this.keys[i].equals(key)) {
                 return true;
             }
         }
     }
 
-    private void setDeleted(int index){
+    private void setDeleted(int index) {
         deleted[index] = true;
         keys[index] = null;
         values[index] = null;
     }
 
     public V get(K key) {
-        for(int i = index(hash(key)) ; ; i++){
+        for (int i = index(hash(key)); ; i++) {
             if (i == size) {
                 i = 0;
             }
-            if (deleted[i]){
-                return null;
+            if (deleted[i]) {
+                continue;
             }
             if (keys[i] == null) {
                 return null;
             }
-            if (keys[i].equals(key)){
+            if (keys[i].equals(key)) {
                 return values[i];
             }
         }
     }
 
-    public V remove(K key){
-        if(currentSize == 0){
+    public V remove(K key) {
+        if (currentSize == 0) {
             return null;
         }
-        for(int i = index(hash(key)) ; ; i++){
+        for (int i = index(hash(key)); ; i++) {
             if (i == size) {
                 i = 0;
             }
-            if (deleted[i]){
-                return null;
+            if (deleted[i]) {
+                continue;
             }
             if (keys[i] == null) {
                 return null;
             }
-            if (keys[i].equals(key)){
+            if (keys[i].equals(key)) {
                 V deletedValue = values[i];
                 this.setDeleted(i);
                 currentSize--;
